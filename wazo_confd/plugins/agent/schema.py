@@ -34,7 +34,7 @@ class AgentSchema(BaseSchema):
     )
     users = fields.Nested(
         'UserSchema',
-        only=['uuid', 'firstname', 'lastname', 'links'],
+        only=['id', 'uuid', 'firstname', 'lastname', 'links'],
         many=True,
         dump_only=True,
     )
